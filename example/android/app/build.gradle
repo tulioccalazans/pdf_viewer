@@ -1,14 +1,14 @@
+plugins {
+    id "com.android.application"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
     localPropertiesFile.withReader('UTF-8') { reader ->
         localProperties.load(reader)
     }
-}
-
-def flutterRoot = localProperties.getProperty('flutter.sdk')
-if (flutterRoot == null) {
-    throw new Exception("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
 }
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
@@ -21,11 +21,9 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-apply plugin: 'com.android.application'
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
-
 android {
-    compileSdkVersion 30
+    ndkVersion = "28.2.13676358"
+    compileSdkVersion 36 // Upgraded for compatibility with newer AGP/Flutter
 
     lintOptions {
         disable 'InvalidPackage'
@@ -34,8 +32,8 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "pt.tribeiro.flutter_pdf_viewer_example"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -48,6 +46,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    namespace 'pt.tribeiro.flutter_plugin_pdf_viewer_example'
 }
 
 flutter {
