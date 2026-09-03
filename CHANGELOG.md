@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+* Added Swift Package Manager (SPM) support for iOS.
+* Updated iOS deployment target to 12.0.
+
 ## 2.0.2
 * Bugfix crashing
 
