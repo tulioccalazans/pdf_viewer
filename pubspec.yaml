@@ -1,6 +1,6 @@
 name: advance_pdf_viewer_plus
 description: A Flutter PDF viewer with support for Android and iOS.
-version: 2.1.0
+version: 2.1.1
 homepage: https://pub.dev/packages/advance_pdf_viewer_plus
 repository: https://github.com/tulioccalazans/pdf_viewer
 issue_tracker: https://github.com/tulioccalazans/pdf_viewer/issues
