@@ -17,8 +17,8 @@ dependencies:
   path_provider: ^2.1.6
 
 dependency_overrides:
-  sqflite: ^2.3.0
   platform: ^3.1.0
+  sqflite: ^2.3.0
 
 dev_dependencies:
   lint: ^1.5.3

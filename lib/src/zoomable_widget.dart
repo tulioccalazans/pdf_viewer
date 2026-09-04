@@ -328,12 +328,16 @@ class _ZoomableChildState extends AnimatedWidgetBaseState<_ZoomableChild> {
 
   @override
   Widget build(BuildContext context) {
+    final dx = _panOffset?.evaluate(animation)?.dx ?? 0.0;
+    final dy = _panOffset?.evaluate(animation)?.dy ?? 0.0;
+    final z = _zoom?.evaluate(animation) ?? 1.0;
     return Transform(
       alignment: Alignment.center,
-      origin: Offset(-(_panOffset!.evaluate(animation)?.dx ?? 0), -(_panOffset!.evaluate(animation)?.dy ?? 0)),
+      origin: Offset(-dx, -dy),
+      // ignore: deprecated_member_use
       transform: Matrix4.identity()
-        ..translate(_panOffset?.evaluate(animation)?.dx, _panOffset?.evaluate(animation)?.dy ?? 0)
-        ..scaleByDouble(_zoom!.evaluate(animation)!),
+        ..translate(dx, dy, 0.0)
+        ..scale(z, z, 1.0),
       child: Transform.rotate(
         angle: _rotation!.evaluate(animation) ?? 0,
         child: widget.child,
