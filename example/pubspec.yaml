@@ -15,9 +15,9 @@ dependencies:
   advance_pdf_viewer_plus:
     path: ../
 
-dependency_overrides:
-  sqflite: ^2.3.0
-  platform: ^3.1.0
+#dependency_overrides:
+#  sqflite: ^2.3.0
+#  platform: ^3.1.0
 
 dev_dependencies:
   flutter_test:

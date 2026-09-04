@@ -199,7 +199,7 @@ packages:
     source: hosted
     version: "2.3.0"
   platform:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       name: platform
       sha256: "5d6b1b0036a5f331ebc77c850ebc8506cbc1e9416c27e59b439f917a902a4984"
@@ -236,7 +236,7 @@ packages:
     source: hosted
     version: "1.8.1"
   sqflite:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       name: sqflite
       sha256: "58a799e6ac17dd32fbab93813d39ed835a75ccc0f8f85b8955fe318c6712b082"
