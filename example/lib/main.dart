@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:advance_pdf_viewer/advance_pdf_viewer_plus.dart';
+import 'package:advance_pdf_viewer_plus/advance_pdf_viewer_plus.dart';
 
 void main() => runApp(MaterialApp(
       home: MyApp(),

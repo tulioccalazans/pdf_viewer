@@ -1,5 +1,5 @@
 name: advance_pdf_viewer_example
-description: Demonstrates how to use the advance_pdf_viewer plugin.
+description: Demonstrates how to use the advance_pdf_viewer_plus plugin.
 publish_to: 'none'
 
 environment:
@@ -12,7 +12,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.9
-  advance_pdf_viewer:
+  advance_pdf_viewer_plus:
     path: ../
 
 dependency_overrides:

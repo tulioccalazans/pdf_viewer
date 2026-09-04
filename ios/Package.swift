@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "advance_pdf_viewer",
+    name: "advance_pdf_viewer_plus",
     platforms: [
         .iOS("12.0")
     ],
     products: [
         .library(
-            name: "advance_pdf_viewer",
-            targets: ["advance_pdf_viewer"]
+            name: "advance_pdf_viewer_plus",
+            targets: ["advance_pdf_viewer_plus"]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "advance_pdf_viewer",
+            name: "advance_pdf_viewer_plus",
             dependencies: [],
             path: "Classes",
             publicHeadersPath: ".",

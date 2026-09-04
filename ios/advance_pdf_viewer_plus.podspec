@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'advance_pdf_viewer'
+  s.name             = 'advance_pdf_viewer_plus'
   s.version          = '2.1.0'
   s.summary          = 'Allows you to generate PNG&#x27;s of specified pages from a provided PDF file source.'
   s.description      = <<-DESC

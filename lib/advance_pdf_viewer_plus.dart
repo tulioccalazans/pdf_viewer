@@ -1,4 +1,4 @@
-library advance_pdf_viewer;
+library advance_pdf_viewer_plus;
 
 export 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
