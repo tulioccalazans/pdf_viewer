@@ -1,15 +1,38 @@
-# advance_pdf_viewer
+# advance_pdf_viewer_plus
 
-A flutter plugin for handling PDF files. Works on both Android & iOS. Originally forked from (https://github.com/CrossPT/flutter_plugin_pdf_viewer).
+> **This package is a maintained fork of [`advance_pdf_viewer`](https://pub.dev/packages/advance_pdf_viewer).**
 
-[![Pub Package](https://img.shields.io/pub/v/advance_pdf_viewer.svg?style=flat-square)](https://pub.dartlang.org/packages/advance_pdf_viewer)
+`advance_pdf_viewer_plus` is based on the original [`advance_pdf_viewer`](https://pub.dev/packages/advance_pdf_viewer) package, which is no longer actively maintained.
 
+This fork aims to keep the package compatible with modern Flutter, Android, and iOS development environments while preserving the original API and functionality whenever possible.
+
+### Original project
+
+* **Original package:** https://pub.dev/packages/advance_pdf_viewer
+* **Original repository:** https://github.com/lohanidamodar/pdf_viewer
+* **Maintained fork:** https://github.com/tulioccalazans/pdf_viewer
+
+### What changed
+
+This fork includes modernization of the Android and iOS build infrastructure, including:
+
+* Modern Flutter Gradle Plugin configuration
+* Updated Android build configuration
+* Android namespace support
+* Removal of deprecated JCenter usage
+* Swift Package Manager (SPM) support for iOS
+* Updated minimum iOS deployment target
+* Updated dependencies and project configuration
+* Compatibility improvements for newer Flutter and platform tooling
+
+
+[![Pub Package](https://img.shields.io/pub/v/advance_pdf_viewer.svg?style=flat-square)](https://pub.dartlang.org/packages/advance_pdf_viewer_plus)
 
 ## Installation
 
-Add  *advance_pdf_viewer*  as a dependency in [your pubspec.yaml file](https://flutter.io/platform-plugins/).
+Add  *advance_pdf_viewer_plus*  as a dependency in [your pubspec.yaml file](https://flutter.io/platform-plugins/).
 ```
-advance_pdf_viewer: any
+advance_pdf_viewer_plus: any
 ```
 
 ---
