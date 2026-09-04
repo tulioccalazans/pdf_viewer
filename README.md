@@ -26,7 +26,7 @@ This fork includes modernization of the Android and iOS build infrastructure, in
 * Compatibility improvements for newer Flutter and platform tooling
 
 
-[![Pub Package](https://img.shields.io/pub/v/advance_pdf_viewer.svg?style=flat-square)](https://pub.dartlang.org/packages/advance_pdf_viewer_plus)
+[![Pub Package](https://img.shields.io/pub/v/advance_pdf_viewer_plus.svg?style=flat-square)](https://pub.dartlang.org/packages/advance_pdf_viewer_plus)
 
 ## Installation
 
