@@ -12,8 +12,8 @@ Allows you to generate PNG&#x27;s of specified pages from a provided PDF file so
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+  s.source_files     = 'advance_pdf_viewer_plus/Sources/advance_pdf_viewer_plus/**/*.{h,m}'
+  s.public_header_files = 'advance_pdf_viewer_plus/Sources/advance_pdf_viewer_plus/include/advance_pdf_viewer_plus/*.h'
   s.dependency 'Flutter'
 
   s.ios.deployment_target = '12.0'
